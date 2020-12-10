@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5{
 }
 p {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 23px;
     color: var(--gray_dark_color);
 }
 .clearfix {
@@ -828,66 +828,89 @@ button:focus, input:focus, select:focus, textarea:focus{
 /* == submenu second level css == */
 /*======= Navigation Header css End ========*/
 /*==== page banner css Start ====*/
-.page_banner_section {
+.pathology_page_banner {
+    float: left;
+    width: 100%;
     position: relative;
-    padding: 158px 0 50px;
-    background: #ffffff url(../images/bg/page_banner_bg.jpg) no-repeat;
+    padding: 30px 0px;
+    background-color: #555555;
+    background-image: url(../images/bg/pathology_bg.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    z-index: 1;
 }
-.page_banner_section .overlay {
-    opacity: 0.7;
+.pathology_page_banner .overlay {
+    opacity: 0.5;
+    z-index: -1;
 }
-.page_banner_title h3 {
-    font-size: 24px;
-    margin: 0;
-    text-transform: capitalize;
-    letter-spacing: 0.02em;
+.pathology_page_caption .title {
+    color: #FFFFFF;
+    text-shadow: 0px 2px 7px rgb(16 16 16 / 70%);
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    margin: 50px 0;
+}
+.appointment_dv .appointment_btn {
+    font-size: 22px;
+    height: 55px;
+    display: inline-block;
+    line-height: 55px;
+    color: #FFFFFF;
+    background: var(--primary_color);
     font-weight: 600;
-    color: #fff;
+    padding: 0px 20px;
+    text-decoration: none;
+    border-radius: 8px;
 }
-.breadcrumb_wrapper {
-    text-align: right;
-}
-.breadcrumb_wrapper .breadcrumb {
-    background-color: transparent;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-}
-.breadcrumb_wrapper .breadcrumb > li {
-    display: inline-block;
-	color: #ffffff;
-    text-transform: capitalize;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    padding: 0 5px;
-    position: relative;
-}
-.breadcrumb > li+li:before {
-    content: "/";
-    left: -4px;
-    position: absolute;
-}
-.breadcrumb_wrapper .breadcrumb > li > a {
-    color: #ffffff;
+.appointment_dv .appointment_btn:hover {
+    color: #FFFFFF;
+    background: var(--black_color);
     text-decoration: none;
 }
-.breadcrumb > li > a i {
-    margin-right: 4px;
-    font-size: 15px;
+.breadcrumb_wrapper {
+    text-align: left;
+	display:inline-block;
+	width:100%;
 }
-.breadcrumb_wrapper .breadcrumb > li > a:hover {
-    color: var(--secondary_color);
+.breadcrumb {
+    background-color: #ffffff;
+    display: inline-block;
+    padding: 2px 3px 4px;
+    margin: 0;
+}
+.breadcrumb > li {
+    display: inline-block;
+    color: #555555;
+    text-transform: capitalize;
+    letter-spacing: 0.03em;
+    padding: 0 8px;
+    position: relative;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 600;
+}
+.breadcrumb > li+li:before {
+    content: ">";
+    left: -5px;
+    position: absolute;
+    line-height: 17px;
+}
+.breadcrumb > li > a {
+    color: #666666;
+    text-decoration: none;
+}
+.breadcrumb > li > a:hover {
+    color: var(--primary_color);
 }
 /*==== page banner css End ====*/
 /*==== Section Heading css start  ====*/
-
 .section_heading {
     margin-bottom: 40px;
 	display:inline-block;
 	width:100%;
-	background:#E2F4F4;
+	background: transparent linear-gradient(90deg, #E2F4F4 0%, #E1E6E64B 100%) 0% 0% no-repeat;
 	padding:10px 0;
 }
 .section_heading .heading_dv {
@@ -1077,6 +1100,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .feature_column .icon_box {
     font-size: 54px;
+    color: #414141;
 }
 .feature_column .icon_box img {
     height: 54px;
@@ -1313,6 +1337,128 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin-left: 15px;
 }
 /*==== App section css end ====*/
+/*==== all service heading css start ====*/
+.service_section_heading {
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    background: transparent linear-gradient(90deg, #E2F4F4 0%, #E1E6E64B 100%) 0% 0% no-repeat;
+    padding: 18px 0;
+}
+.service_section_heading .row {
+    align-items: center;
+}
+.service_section_heading .heading_dv {
+    display: inline-block;
+}
+.service_section_heading .heading_dv .icon {
+    font-size: 40px;
+	float:left;
+    width: 40px;
+	vertical-align:middle;
+}
+.service_section_heading .heading_dv .icon img{
+	height:40px;
+}
+.service_section_heading .heading_dv .text{
+	padding-left:45px;
+}
+.service_section_heading .heading_dv h3{
+	font-size:28px;
+	font-weight: bold;
+	line-height:37px;
+	margin:0;
+	color:var(--primary_color);
+	text-transform:capitalize;
+	font-family: 'PT Serif', serif;
+}
+.service_section_heading .heading_dv p{
+	margin-bottom:0;
+}
+.mobile_srvc_searchbar .title {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.searchbar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.searchbar .search_input {
+    width: 100%;
+    height: 50px;
+    font: normal normal 600 15px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #555555;
+    background: #fff;
+    border: 1px solid var(--primary_color);
+    padding: 0 35px 0 15px;
+    border-radius: 8px;
+}
+.searchbar .search_btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    width: 25px;
+}
+.searchbar .search_btn img {
+    width: 25px;
+}
+/*==== all service heading end ====*/
+/*==== all service page css start ====*/
+.all_service_box {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    background: #ffffff;
+	margin-bottom:30px;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
+    -webkit-box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
+}
+.all_service_box .headings {
+    background: transparent linear-gradient(90deg, #E2F4F4 0%, #E1E6E64B 100%) 0% 0% no-repeat;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    height: 66px;
+	text-decoration:none;
+}
+.all_service_box .headings .icon {
+    font-size: 30px;
+    color: #414141;
+    width: 35px;
+    margin-right: 9px;
+}
+.all_service_box .headings .icon img {
+    height: 45px;
+    width: 35px;
+    object-fit: contain;
+}
+.all_service_box .headings h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+}
+.all_service_box .captions {
+    padding: 20px 15px;
+}
+.all_service_box .captions p {
+    margin-bottom:0;
+	font-weight:600;
+}
+/*==== all service page css end ====*/
 /*==== footer section css end ====*/
 .footer_section{
 	float:left;
