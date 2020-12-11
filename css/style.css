@@ -68,88 +68,6 @@ img{
 .h_center{
 	justify-content:center;
 }
-
-/*== main form css End ==*/
-.gradient_bg{
-	background: hsla(72, 61%, 57%, 1);
-	background: linear-gradient(90deg, hsla(72, 61%, 57%, 1) 2%, hsla(149, 93%, 36%, 1) 100%);
-	background: -moz-linear-gradient(90deg, hsla(72, 61%, 57%, 1) 2%, hsla(149, 93%, 36%, 1) 100%);
-	background: -webkit-linear-gradient(90deg, hsla(72, 61%, 57%, 1) 2%, hsla(149, 93%, 36%, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#BBD550", endColorstr="#06B259", GradientType=1 );
-}
-.shadow_box {
-	padding:20px;
-    background-color: var(--white_color);
-    transition: all ease-in-out 0.25s;
-    -webkit-transition: all ease-in-out 0.25s;
-    -moz-transition: all ease-in-out 0.25s;
-    box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
-    -ms-box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
-    -o-box-shadow: 8px 15px 40px rgba(0, 0, 0, 0.15);
-}
-.site_common_form{
-	display:inline-block;
-	width:100%;
-}
-.form_heading {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 20px;
-}
-.form_heading .heading {
-    margin: 0;
-    text-transform: capitalize;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--secondary_color);
-}
-.form_heading p {
-    margin-bottom: 0px;
-}
-.site_common_form .form_group .form_label {
-    color: var(--black_color);
-    font-size: 15px;
-    margin-bottom: 8px;
-    line-height: 17px;
-    text-transform: capitalize;
-    font-weight: 500;
-}
-.site_common_form .form_group .form-control, 
-.site_common_form .form_group input, 
-.site_common_form .form_group select, 
-.site_common_form .form_group textarea {
-    height: 40px;
-    padding: 0 10px;
-    font-size: 14px;
-    width: 100%;
-    border: 1px solid #ccc;
-	border-radius: 5px;
-}
-.site_common_form .form_group textarea.form-control, 
-.site_common_form .form_group textarea {
-    height: 82px;
-    padding-top: 10px;
-	resize:none;
-}
-.site_common_form .form_group {
-    margin-bottom: 14px;
-    display: inline-block;
-    width: 100%;
-}
-.site_common_form .submit_buttons {
-    margin-top: 10px;
-}
-.site_common_form .form_text {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-    color: #f5a91f;
-    font-size: 20px;
-    font-weight: 500;
-}
-/*== main form css End ==*/
 /*=== Owl dots css start ===*/
 .owl-carousel .owl-dots {
 	display:inline-block;
@@ -279,11 +197,12 @@ img{
 .radio_box label .r_check {
     position: absolute;
     left: 0;
-    top: 3px;
-    width: 18px;
-    height: 18px;
+    top: 0px;
+    width: 22px;
+    height: 22px;
     content: "";
-    border: 1px solid var(--gray_color);
+    border: 1px solid var(--primary_color);
+    background: #ffffff;
     border-radius: 50%;
     transition: all ease-in 0.25s;
     -webkit-transition: all ease-in 0.25s;
@@ -292,25 +211,37 @@ img{
 .radio_box label .r_check:after {
     position: absolute;
     content: "";
-    top: 3px;
-    left: 3px;
-    width: 10px;
-    height: 10px;
-    background-color: var(--gray_color);
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary_color);
     border-radius: 50%;
     transition: all ease-in 0.25s;
     -webkit-transition: all ease-in 0.25s;
     -moz-transition: all ease-in 0.25s;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
 }
 .radio_box .r_text {
-    padding-left: 25px;
+    padding-left: 30px;
     display: block;
+	font-size: 16px;
+	font-weight: 600;
+	color:var(--primary_color);
 }
 .radio_box label input[type=radio]:checked ~ .r_check{
     border-color: var(--primary_color);
 }
-.radio_box label input[type=radio]:checked ~ .r_check:after{
-    background-color: var(--primary_color);
+.radio_box label input[type=radio]:checked ~ .r_check:after {
+    transform: scale(1);
+	-webkit-transform:scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
 }
 /*=== radio box css End ===*/
 /*== check box css ==*/
@@ -466,6 +397,25 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .width_100{
 	width:100%;
+}
+.big_button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    height: 55px;
+    line-height: 55px;
+    background: var(--primary_color);
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 0px 30px;
+    border-radius: 5px;
+	border:none;
+	text-transform:capitalize;
+}
+.big_button:hover, .big_button:focus {
+    color: #FFFFFF;
+    background: #064d73;
+    text-decoration: none;
 }
 /*=== common css End ===*/
 /*=== Modal css Start ===*/
@@ -827,48 +777,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /* == submenu second level css == */
 /*======= Navigation Header css End ========*/
-/*==== page banner css Start ====*/
-.pathology_page_banner {
-    float: left;
-    width: 100%;
-    position: relative;
-    padding: 30px 0px;
-    background-color: #555555;
-    background-image: url(../images/bg/pathology_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
-}
-.pathology_page_banner .overlay {
-    opacity: 0.5;
-    z-index: -1;
-}
-.pathology_page_caption .title {
-    color: #FFFFFF;
-    text-shadow: 0px 2px 7px rgb(16 16 16 / 70%);
-    font-size: 40px;
-    line-height: 55px;
-    font-weight: 700;
-    margin: 50px 0;
-}
-.appointment_dv .appointment_btn {
-    font-size: 22px;
-    height: 55px;
-    display: inline-block;
-    line-height: 55px;
-    color: #FFFFFF;
-    background: var(--primary_color);
-    font-weight: 600;
-    padding: 0px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-}
-.appointment_dv .appointment_btn:hover {
-    color: #FFFFFF;
-    background: var(--black_color);
-    text-decoration: none;
-}
+/*==== Breadcrumb css Start ====*/
 .breadcrumb_wrapper {
     text-align: left;
 	display:inline-block;
@@ -904,7 +813,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .breadcrumb > li > a:hover {
     color: var(--primary_color);
 }
-/*==== page banner css End ====*/
+/*==== Breadcrumb css End ====*/
 /*==== Section Heading css start  ====*/
 .section_heading {
     margin-bottom: 40px;
@@ -1422,6 +1331,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
     -webkit-box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
     -moz-box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
+	min-height:152px;
 }
 .all_service_box .headings {
     background: transparent linear-gradient(90deg, #E2F4F4 0%, #E1E6E64B 100%) 0% 0% no-repeat;
@@ -1459,10 +1369,55 @@ button:focus, input:focus, select:focus, textarea:focus{
 	font-weight:600;
 }
 /*==== all service page css end ====*/
+/*==== pathology banner css start ====*/
+.pathology_page_banner {
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 30px 0px;
+    background-color: #555555;
+    background-image: url(../images/bg/pathology_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+	margin-bottom:30px;
+}
+.pathology_page_banner .overlay {
+    opacity: 0.5;
+    z-index: -1;
+}
+.pathology_page_banner .feature_box_wrapper{
+	text-align:left;
+}
+.pathology_page_caption .title {
+    color: #FFFFFF;
+    text-shadow: 0px 2px 7px rgb(16 16 16 / 70%);
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    margin: 50px 0;
+}
+.appointment_dv .appointment_btn {
+    padding: 0px 25px;
+    border-radius: 8px;
+}
+/*==== pathology banner css End ====*/
+/*==== pathology page 2 css start ====*/
+.pathology_page_banner2 {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.pathology_page_banner2 .feature_box_wrapper {
+    margin-top: 40px;
+	text-align:left;
+}
+/*==== pathology page 2 css end ====*/
 /*==== footer section css end ====*/
-.footer_section{
-	float:left;
-	width:100%;
+.footer_section {
+    float: left;
+    width: 100%;
 }
 .footer_widget{
 	display:inline-block;
@@ -1536,3 +1491,117 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: var(--primary_color);
 }
 /*==== footer bottom css end ====*/
+/*==== signup page css start ====*/
+.signup_page_wrap {
+    background: #ffffff url(../images/bg/singup_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+.signup_page_wrap .overlay {
+	opacity:0.2;
+	z-index:-1;
+}
+.singup_form_cover {
+    float: left;
+    width: 100%;
+    box-shadow: 0px 1px 9px rgb(64 64 64 / 40%);
+    -webkit-box-shadow: 0px 1px 9px rgb(64 64 64 / 40%);
+    -moz-box-shadow: 0px 1px 9px rgb(64 64 64 / 40%);
+}
+.s_form_heading {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    background: #fff;
+    padding: 12px 13px;
+}
+.s_form_heading .icon {
+    width: 40px;
+    margin-right: 9px;
+}
+.s_form_heading h3 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 34px;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+}
+.singup_form {
+    padding: 20px 30px;
+    background: rgb(255 255 255 / 0.80);
+}
+.singup_form .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #505050;
+	margin-bottom:14px;
+}
+.singup_form .title strong {
+    color: #333333;
+}
+.singup_form .radio_group {
+    margin-bottom: 10px;
+}
+.singup_form .radio_group .div_s {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--primary_color);
+}
+.singup_form .radio_group .labels {
+    padding-right: 6px;
+}
+.singup_form .form_group {
+    margin-bottom: 15px;
+}
+.singup_form .form_group .f_label {
+    color: var(--primary_color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+.singup_form .input_group {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.singup_form .input_group input {
+    width: 100%;
+    height: 34px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #414141;
+    padding: 0 10px 0 24px;
+    font-weight: 600;
+    color: #414141;
+}
+.singup_form .input_group i {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: #414141;
+    font-size: 20px;
+}
+.singup_form .signup_btn {
+    width: 100%;
+}
+.singup_form .bottom_lnks {
+    text-align: center;
+}
+.singup_form .bottom_lnks .lnks {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary_color);
+    font-weight: 600;
+    font-size: 15px;
+	padding: 0 10px;
+}
+/*==== signup page css end ====*/
