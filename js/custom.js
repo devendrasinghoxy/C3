@@ -29,7 +29,6 @@
 			$(".card_pay_form").slideUp(100);
 		}
 	});
-	
 	//scroll carousel
 	//Brands slider
 	$(".product_slider").owlCarousel({
@@ -169,5 +168,15 @@
 		$(this).next(".footer_menu").slideToggle(100);
 		$(".f_widget_title").not(this).next().slideUp(100);
 		$(".f_widget_title").not(this).removeClass("active");
+	});
+	//Datepicker
+	$( ".datepicker" ).datepicker({
+		dateFormat: "dd-mm-yy",
+		minDate:0
+	});
+	//upload doc file name function
+	$('.docs_input').change(function(e){
+		var fileName = e.target.files[0].name;
+		$(this).parents(".upload_docs").children(".text").text(fileName);
 	});
 })(jQuery);

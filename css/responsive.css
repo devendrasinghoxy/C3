@@ -103,6 +103,9 @@
 	.searchbar .search_input {
 		padding: 0 32px 0 13px;
 	}
+	.signup_page_wrap {
+		padding: 60px 0 40px;
+	}
 }
 @media(max-width:991px){
 	.main_header {
@@ -295,13 +298,13 @@
 		display:none;
 	}
 	/* pathology page css */
-	.pathology_page_banner {
+	.service_page_banner {
 		padding: 55px 0 0;
 		background-color: transparent;
 		background-image: none;
 		margin-bottom: 5px;
 	}
-	.pathology_page_banner .overlay {
+	.service_page_banner .overlay {
 		opacity:0;
 	}
 	/* pathology page css */
@@ -382,11 +385,11 @@
 	}
 	/*== searchbar css ==*/
 	/* service css */
-	.overlay_caption h3 {
+	.h_service_box .overlay_caption h3 {
 		font-size: 18px;
 		line-height: 22px;
 	}
-	.overlay_caption p {
+	.h_service_box .overlay_caption p {
 		font-size: 14px;
 		line-height: 20px;
 	}
@@ -575,6 +578,44 @@
 		padding: 0px 20px;
 	}
 	/* sign up css */
+	/* Mri booking form css */
+	.mri_links_ros .mri_links {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.mri_booking_form h3 {
+		font-size: 23px;
+		line-height: 30px;
+		margin-bottom: 16px;
+	}
+	.mri_booking_form .form_group .f_label {
+		margin-bottom: 4px;
+		font-size: 14px;
+	}
+	.mri_booking_form .form_group input, .mri_booking_form .form_group select {
+		height: 45px;
+		border-radius: 5px;
+		padding: 0 9px;
+		font-size: 15px;
+	}
+	.mri_booking_form .mri_book_btn {
+		margin-top: 10px;
+	}
+	.upload_doc_button {
+		height: 45px;
+		line-height: 45px;
+		border-radius: 5px;
+		padding: 0 8px;
+		font-size: 15px;
+		font-weight: 600;
+	}
+	.upload_doc_button i, .upload_doc_button svg {
+		float: right;
+		margin-top: 12px;
+		font-size: 20px;
+		height: 20px;
+	}
+	/* Mri booking form css */
 }
 @media(max-width:530px){
 	.app_container {
@@ -605,13 +646,13 @@
 		max-height: 30px;
 	}
 	/* service css */
-	.overlay_caption h3 {
+	.h_service_box .overlay_caption h3 {
 		font-size: 16px;
 		line-height: 20px;
 		font-weight: 600;
 		margin-bottom: 2px;
 	}
-	.overlay_caption p {
+	.h_service_box .overlay_caption p {
 		font-size: 12px;
 		line-height: 17px;
 	}

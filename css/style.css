@@ -68,6 +68,20 @@ img{
 .h_center{
 	justify-content:center;
 }
+/* placeholder css start */
+.blue_input_text::-webkit-input-placeholder {
+    color:var(--primary_color);
+}
+.blue_input_text::-moz-placeholder {
+   color:var(--primary_color);
+}
+.blue_input_text:-ms-input-placeholder {
+    color:var(--primary_color);
+}
+.blue_input_text	:-moz-placeholder {
+   color:var(--primary_color);
+}
+/* placeholder css start */
 /*=== Owl dots css start ===*/
 .owl-carousel .owl-dots {
 	display:inline-block;
@@ -784,7 +798,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	width:100%;
 }
 .breadcrumb {
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     display: inline-block;
     padding: 2px 3px 4px;
     margin: 0;
@@ -809,6 +823,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .breadcrumb > li > a {
     color: #666666;
     text-decoration: none;
+    text-transform: capitalize;
 }
 .breadcrumb > li > a:hover {
     color: var(--primary_color);
@@ -887,6 +902,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	height:100%;
 }
 .slider_caption_text h2 {
+	text-transform:capitalize;
     font-size: 28px;
     color: #fff;
 	font-family: 'PT Serif', serif;
@@ -1024,33 +1040,38 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: var(--primary_color);
     margin-top: 7px;
     line-height: 15px;
+    text-transform: capitalize;
 }
 /*==== feature circle css end ====*/
 /*==== Service Section css Start ====*/
-.service_box {
+.h_service_box {
     display: inline-block;
     width: 100%;
     margin-bottom: 30px;
 }
-.service_box .img_box{
+.h_service_box .lnks {
+    display: block;
+    text-decoration: none;
+}
+.h_service_box .img_box{
 	display:inline-block;
 	position:relative;
 	overflow:hidden;
 }
-.service_box .img_box img {
+.h_service_box .img_box img {
     border-radius: 5px;
     transition: all ease-in 0.25s;
     -webkit-transition: all ease-in 0.25s;
     -moz-transition: all ease-in 0.25s;
 }
-.service_box .img_box:hover img {
+.h_service_box .img_box:hover img {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
 }
-.service_box .overlay_caption {
+.h_service_box .overlay_caption {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1060,14 +1081,15 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding: 8px 0;
     border-radius: 0 0 5px 5px;
 }
-.overlay_caption h3 {
+.h_service_box .overlay_caption h3 {
     font-size: 20px;
     color: #FFFFFF;
     line-height: 25px;
     font-weight: 600;
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
-.overlay_caption p {
+.h_service_box .overlay_caption p {
     margin-bottom: 0;
     font-size: 15px;
     line-height: 22px;
@@ -1351,7 +1373,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin-right: 9px;
 }
 .all_service_box .headings .icon img {
-    height: 45px;
+    height: 40px;
     width: 35px;
     object-fit: contain;
 }
@@ -1360,6 +1382,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-size: 24px;
     line-height: 34px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 .all_service_box .captions {
     padding: 20px 15px;
@@ -1370,7 +1393,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /*==== all service page css end ====*/
 /*==== pathology banner css start ====*/
-.pathology_page_banner {
+.service_page_banner {
     float: left;
     width: 100%;
     position: relative;
@@ -1383,14 +1406,14 @@ button:focus, input:focus, select:focus, textarea:focus{
     z-index: 1;
 	margin-bottom:30px;
 }
-.pathology_page_banner .overlay {
+.service_page_banner .overlay {
     opacity: 0.5;
     z-index: -1;
 }
-.pathology_page_banner .feature_box_wrapper{
+.service_page_banner .feature_box_wrapper{
 	text-align:left;
 }
-.pathology_page_caption .title {
+.service_banner_caption .title {
     color: #FFFFFF;
     text-shadow: 0px 2px 7px rgb(16 16 16 / 70%);
     font-size: 40px;
@@ -1605,3 +1628,99 @@ button:focus, input:focus, select:focus, textarea:focus{
 	padding: 0 10px;
 }
 /*==== signup page css end ====*/
+/*==== diagnosis css end ====*/
+.service_banner_search h3 {
+    text-shadow: 0px 0px 5px #000000CC;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+/*==== diagnosis css end ====*/
+/*==== Mri page css Start ====*/
+.mri_links_ros {
+    display: inline-block;
+    width: 100%;
+}
+.mri_links_ros .mri_links {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    color: var(--primary_color);
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+/*==== Mri page css end ====*/
+/*==== Mri booking form css start ====*/
+.mri_booking_form h3 {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 600;
+    color: var(--primary_color);
+    margin-bottom: 20px;
+}
+.mri_booking_form .form_group {
+    margin-bottom: 15px;
+}
+.mri_booking_form .form_group .f_label {
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555555;
+}
+.mri_booking_form .form_group .f_label .star {
+    color: #9D1E00;
+}
+.mri_booking_form .form_group input, 
+.mri_booking_form .form_group select {
+    background: #ffffff;
+    border: 1px solid var(--primary_color);
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--primary_color);
+}
+.mri_booking_form .form_group select {
+	text-transform:capitalize;
+}
+.upload_doc_button {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--primary_color);
+    border: 1px solid var(--primary_color);
+    cursor: pointer;
+}
+.upload_doc_button input {
+    display: none;
+}
+.upload_doc_button i, .upload_doc_button svg {
+    float: right;
+    margin-top: 13px;
+    font-size: 24px;
+    height: 24px;
+}
+.mri_booking_form .mri_book_btn {
+    margin-top: 25px;
+}
+/*==== Mri booking form css start ====*/
+/*==== Mri booking modal css start ====*/
+.mri_book_modal .modal-dialog {
+    max-width: 700px;
+}
+/*==== Mri booking modal css end ====*/
