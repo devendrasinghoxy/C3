@@ -192,7 +192,6 @@
 </div>
 <!-- MRI Booking section End -->
 <!-- MRI Booking modal start -->
-<!-- Modal -->
 <div class="modal fade mri_book_modal" id="mri_book_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -202,8 +201,12 @@
         </button>
       </div>
       <div class="modal-body">
-		<div class="mri_booking_form">
-			<h3>Please confirm the following information :</h3>
+		<div class="booking_confirm_heading">
+			<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="63.363" height="59.501" viewBox="0 0 63.363 59.501"><defs><style></style></defs><g transform="translate(-11014 1295)"><rect class="a" width="40.053" height="3.754" transform="translate(11014.015 -1259.778)"/><path class="a" d="M49.637,40.384a4.753,4.753,0,1,1,4.751,4.752A4.751,4.751,0,0,1,49.637,40.384Z" transform="translate(10995.814 -1308.055)"/><path class="a" d="M25.377,35.371H9.463L0,36.819v8.214l4.776,0a3.983,3.983,0,0,1-.608-2.1,4.023,4.023,0,0,1,4.02-4.02H16.9l7.064-1.476.392,1.876L17.1,40.834H8.187a2.1,2.1,0,0,0-.027,4.2l17.256,0a4.834,4.834,0,0,0-.038-9.667Z" transform="translate(11014 -1307.959)"/><path class="a" d="M43.574,55.188A19.224,19.224,0,1,0,27.19,25.949h8.05a13.074,13.074,0,1,1,2.683,21.758H28.379A19.168,19.168,0,0,0,43.574,55.188Z" transform="translate(11004.038 -1301.133)"/><g transform="translate(11019.38 -1295)"><path class="a" d="M36.723,0A29.754,29.754,0,0,0,8.491,20.38l3.666-.571,5.949,0A21.147,21.147,0,1,1,19.143,41.57H9.421A29.751,29.751,0,1,0,36.723,0Zm6.751,6.766a.943.943,0,0,1-.914.716.86.86,0,0,1-.229-.029,23.1,23.1,0,0,0-11.12,0,.943.943,0,1,1-.455-1.829,24.949,24.949,0,0,1,12.031,0A.942.942,0,0,1,43.474,6.766Z" transform="translate(-8.491)"/></g></g></svg></span>
+			<div class="text"><h3>Magnetic Resonance Imaging</h3></div>
+		</div>
+		<div class="mri_booking_form booking_confirm_form">
+			<h4>Please confirm the following information :</h4>
 			<form>
 				<div class="row">
 					<div class="col-lg-6 col-sm-12 col-12">
@@ -239,10 +242,10 @@
 						</div>
 					</div>
 					<div class="col-lg-12 col-sm-12 col-12 text-center">
-						<button type="button" class="big_button confirm_btn">Confirm and Pay</a>
-					</div>
-					<div class="bottom_cancle_lnk text-center">
-						<span class="bottom_cancle_lnk" data-dismiss="modal">Cancel</span>
+						<button type="submit" class="big_button confirm_btn">Confirm and Pay</button>
+						<div class="bottom_cancle_div">
+							<span class="cancle_lnk" data-dismiss="modal">Cancel</span>
+						</div>
 					</div>
 				</div>
 			</form>

@@ -27,6 +27,10 @@
 		padding-left: 6px;
 		padding-right: 6px;
 	}
+	.feature_column {
+       width: 138px;
+       height: 138px;
+	}
 }
 @media(min-width:992px){
 	.caret_down {
@@ -592,14 +596,16 @@
 		margin-bottom: 4px;
 		font-size: 14px;
 	}
-	.mri_booking_form .form_group input, .mri_booking_form .form_group select {
+	.mri_booking_form .form_group input, 
+	.mri_booking_form .form_group select {
 		height: 45px;
 		border-radius: 5px;
 		padding: 0 9px;
 		font-size: 15px;
 	}
-	.mri_booking_form .mri_book_btn {
+	.mri_booking_form .mri_book_btn, .booking_confirm_form .confirm_btn {
 		margin-top: 10px;
+		width: 100%;
 	}
 	.upload_doc_button {
 		height: 45px;
@@ -616,6 +622,31 @@
 		height: 20px;
 	}
 	/* Mri booking form css */
+	/* Mri booking confirmation form css */
+	.booking_confirm_heading .icon {
+		width: 30px;
+		font-size: 30px;
+	}
+	.booking_confirm_heading .text {
+		padding-left: 7px;
+	}
+	.booking_confirm_heading .icon svg {
+		font-size: 30px;
+		width: 30px;
+	}
+	.booking_confirm_heading h3 {
+		font-size: 22px;
+		line-height: 24px;
+	}
+	.booking_confirm_form {
+		padding: 0 0px;
+	}
+	.booking_confirm_form h4 {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+	/* Mri booking confirmation form css */
 }
 @media(max-width:530px){
 	.app_container {
@@ -708,6 +739,12 @@
 		line-height: 20px;
 	}
 	/* signup form css */
+}
+@media(max-width:415px){
+	.booking_confirm_heading h3 {
+		font-size: 18px;
+		line-height: 20px;
+	}
 }
 @media(max-width:400px){
 	.s_form_heading .icon {
