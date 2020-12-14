@@ -1770,10 +1770,14 @@ button:focus, input:focus, select:focus, textarea:focus{
 .booking_confirm_heading .icon {
     width: 50px;
     font-size: 50px;
+	color: var(--primary_color);
 }
 .booking_confirm_heading .icon svg {
     font-size: 50px;
     width: 50px;
+}
+.booking_confirm_heading .icon svg * {
+    fill: var(--primary_color);
 }
 .booking_confirm_heading .text {
     padding-left: 10px;
