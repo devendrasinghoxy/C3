@@ -88,6 +88,9 @@
 	.mobile_srvc_searchbar{
 		display:none;
 	}
+	.service_banner_search .searchbar {
+		width: 464px;
+	}
 }
 @media(max-width:991px){
 	.service_section_heading .heading_dv p {

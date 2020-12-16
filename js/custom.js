@@ -163,12 +163,15 @@
 		});
 	}
 	//footer menu accordion js
-	$(".f_widget_title").on("click", function(){
-		$(this).toggleClass("active");
-		$(this).next(".footer_menu").slideToggle(100);
-		$(".f_widget_title").not(this).next().slideUp(100);
-		$(".f_widget_title").not(this).removeClass("active");
-	});
+	var w_width = $(window).outerWidth();
+	if(w_width <= 767){
+		$(".f_widget_title").on("click", function(){
+			$(this).toggleClass("active");
+			$(this).next(".footer_menu").slideToggle(100);
+			$(".f_widget_title").not(this).next().slideUp(100);
+			$(".f_widget_title").not(this).removeClass("active");
+		});
+	}
 	//Datepicker
 	$( ".datepicker" ).datepicker({
 		dateFormat: "dd-mm-yy",
